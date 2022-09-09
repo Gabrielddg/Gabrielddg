@@ -1,0 +1,517 @@
+/*  aqui nesse css vou armazenar todos produtos, para ficar um poco mais separado */
+/*  a base simboliza  cada item dos produtos */
+
+.base{
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+.base2{
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+
+}
+
+/* deixando o produto um pouco maior quando passa o mouse por cima */
+.img1:hover{
+    border-radius: 10px;
+    width: 200px;
+    height: 230px;
+    
+    transition-duration: 300ms;
+}
+.img2:hover{
+    border-radius: 10px;
+    width: 200px;
+    height: 230px;
+    
+    transition-duration: 300ms;
+}
+.img3:hover{
+    border-radius: 10px;
+    width: 200px;
+    height: 230px;
+    
+    transition-duration: 300ms;
+}
+.item3{
+    width: 90%;
+    
+}
+.item4{
+    width: 80%;
+}
+/* Nos containers vou e aonde serão adicionados os produtos,
+ cada um sinbiliza uma coluna.
+ obs: o primeiro container e ainde fican=m todos outros, não
+  simbolizando uma lista de produto, e sim aonde os prpodutos estão, ja os demais, conatiner1, 2, 3... sinbolizão 
+  colunas de produtos */
+
+.container{
+    text-align: center;
+    display: flex;
+    position:relative;
+    margin: auto;
+    width: 800px;
+    height: 1000px;
+    /* height: 80%;
+    width:80%; */
+    background-color: rgba(0, 0, 0, 0.1);
+  
+    justify-content: space-around;
+    border-radius: 20px;
+     margin-left: 70px; 
+    margin-top: 30px;
+}
+.container2{
+    top:10px;
+    display: flex;
+    position:absolute;
+    height: 170;
+    width: 700px;
+    margin-bottom: 20px;
+  
+    justify-content: space-around;
+    border-radius: 20px;
+    align-items: center;
+
+}
+.container1{
+    top: 250px;
+    display: flex;
+    position:absolute;
+    height: 170;
+    width: 700px;
+    margin-bottom: 20px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+
+}
+.container3{
+    top: 500px;
+    display: flex;
+    position:absolute;
+    height: 170;
+    width: 700px;
+    margin-bottom: 20px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    justify-content: space-around;
+    border-radius: 20px;
+
+}
+.container4{
+    top: 750px;
+    display: flex;
+    position:absolute;
+    height: 170;
+    width: 700px;
+    margin-bottom: 20px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    justify-content: space-around;
+    border-radius: 20px;
+
+}
+.teste{
+    align-items: stretch;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+
+}
+.imgP{
+    position: relative;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.conteudo{
+    position: fixed;
+
+}
+
+/* criando um mural onde mostra os valores, a quantidade, e o carrinho */
+
+.con-exclusivo{
+    display:none;
+    top: 280px;
+    left: 210px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+    background-color:rgb(214, 206, 206);
+}
+.info{
+    top: 50px;
+    left: 320px;
+     position: absolute; 
+    margin: 0;
+align-items: center;
+
+display: inline-block;
+max-width: 70%;
+overflow:visible;
+margin-left: 10px;
+font-size:x-large;
+
+
+} 
+.ft-teste{
+   position: absolute;
+   top: 18px;
+   left: 10px;
+ display:inline-block;
+margin-top: 10px;
+margin-left: 5px;
+width: 250px;
+height: 290px;
+border-radius: 10px;
+
+}
+#inp{
+
+width: 70px;
+height: 18px;
+border: solid green 1px;
+border-radius: 8px;
+margin-top: 8px;
+/* margin-right: 10px; */
+
+}
+.p{
+  
+margin-top: 8px;
+}
+.btn{
+    font-size: large;
+    height: 35px;
+    width: 150px;
+border-radius: 5px;
+margin-top: 5px;
+background-color: green;
+color: white;
+margin-right: 10px;
+cursor: pointer;
+}
+#btn-mais{
+width: 20px;
+align-items: center;
+justify-content: center;
+
+
+}
+#btn-menos{
+width: 20px;
+margin-left: 2px;
+}
+.titu{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+#back{
+    position: absolute;
+    left: 475px;
+    font-size:x-large;
+    cursor: pointer;
+}
+
+/* dando estilo para o segundo footer */
+
+.footer2{
+    display:none;
+    top: 280px;
+    left: 210px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+    background-color:rgb(214, 206, 206);
+}
+.informacoes2{
+    top: 50px;
+    left: 330px;
+     position: absolute; 
+    margin: 0;
+align-items: center;
+display: inline-block;
+max-width: 70%;
+overflow:visible;
+margin-left: 10px;
+font-size:x-large;
+
+
+} 
+.produto2{
+   position: absolute;
+   top: 18px;
+   left: 10px;
+ display:inline-block;
+margin-top: 10px;
+margin-left: 5px;
+width: 250px;
+height: 290px;
+border-radius: 10px;
+
+}
+#inp{
+
+width: 70px;
+height: 18px;
+border: solid green 1px;
+border-radius: 8px;
+margin-top: 8px;
+/* margin-right: 10px; */
+
+}
+.p{
+  
+margin-top: 8px;
+}
+.btn2{
+    font-size: large;
+    height: 35px;
+    width: 150px;
+border-radius: 5px;
+margin-top: 5px;
+background-color: green;
+color: white;
+margin-right: 10px;
+cursor: pointer;
+position: absolute;
+top: 230px;
+}
+#btn-mais{
+width: 20px;
+align-items: center;
+justify-content: center;
+
+
+}
+#btn-menos{
+width: 20px;
+margin-left: 2px;
+}
+.titu2{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+#back{
+    position: absolute;
+    left: 475px;
+    font-size:x-large;
+    cursor: pointer;
+}
+
+
+/* dando estilo ao terceiro  produto */
+
+.footer3{
+    display:none;
+    top: 280px;
+    left: 210px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+    background-color:rgb(214, 206, 206);
+}
+.informacoes3{
+    top: 50px;
+    left: 330px;
+     position: absolute; 
+    margin: 0;
+align-items: center;
+margin-top: 5px;
+display: inline-block;
+max-width: 70%;
+overflow:visible;
+margin-left: 10px;
+font-size:x-large;
+
+
+} 
+.produto3{
+   position: absolute;
+   top: 18px;
+   left: 10px;
+ display:inline-block;
+margin-top: 10px;
+margin-left: 5px;
+width: 250px;
+height: 290px;
+border-radius: 10px;
+
+}
+#inp{
+
+width: 90px;
+height: 20px;
+border: solid green 1px;
+border-radius: 8px;
+margin-top: 8px;
+/* margin-right: 10px; */
+
+}
+.p{
+  
+margin-top: 8px;
+}
+.btn3{
+    font-size: large;
+    height: 35px;
+    width: 150px;
+border-radius: 5px;
+margin-top: 5px;
+background-color: green;
+color: white;
+margin-right: 10px;
+cursor: pointer;
+position: absolute;
+top: 230px;
+right: 10px;
+}
+#btn-mais{
+width: 20px;
+align-items: center;
+justify-content: center;
+
+
+}
+#btn-menos{
+width: 20px;
+margin-left: 2px;
+}
+.titu2{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+#back{
+    position: absolute;
+    left: 475px;
+    font-size:x-large;
+    cursor: pointer;
+}
+/* quarto e ultimo produto */
+
+
+.footer4{
+    display:none;
+    top: 280px;
+    left: 210px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+    background-color:rgb(214, 206, 206);
+}
+.informacoes4{
+    top: 50px;
+    left: 330px;
+     position: absolute; 
+    margin: 0;
+align-items: center;
+margin-top: 5px;
+display: inline-block;
+max-width: 70%;
+overflow:visible;
+margin-left: 10px;
+font-size:x-large;
+
+
+} 
+.produto4{
+   position: absolute;
+   top: 18px;
+   left: 10px;
+ display:inline-block;
+margin-top: 10px;
+margin-left: 5px;
+width: 250px;
+height: 290px;
+border-radius: 10px;
+
+}
+#inp4{
+
+width: 90px;
+height: 20px;
+border: solid green 1px;
+border-radius: 8px;
+margin-top: 15px;
+margin-left: 3px;
+margin-right: 3px;
+
+}
+.p{
+  
+margin-top: 8px;
+}
+.btn4{
+    font-size: large;
+    height: 35px;
+    width: 150px;
+border-radius: 5px;
+margin-top: 5px;
+background-color: green;
+color: white;
+margin-right: 10px;
+cursor: pointer;
+position: absolute;
+top: 230px;
+right: 10px;
+}
+
+#btn-mais{
+width: 20px;
+align-items: center;
+justify-content: center;
+
+
+}
+#btn-menos{
+width: 20px;
+margin-left: 2px;
+}
+.titu2{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+#back{
+    position: absolute;
+    left: 475px;
+    font-size:x-large;
+    cursor: pointer;
+}
